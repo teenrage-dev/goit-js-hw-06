@@ -12,3 +12,18 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+
+const galleryImg = document.querySelector(".gallery");
+galleryImg.insertAdjacentHTML("afterbegin", 
+images.map(image => 
+  `<li>
+  <img src = "${image.url}" alt = "${image.alt}" width="300" height="200">
+  </li>`
+  )
+.join(""));
+
+// galleryImg.style.display = "flex";
+// galleryImg.style.justifyContent: "space-between";
+
+// Пробув зробити так але тоді взагалі лішки не добавляютьсяю.
