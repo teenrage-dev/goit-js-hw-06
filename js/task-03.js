@@ -23,7 +23,5 @@ images.map(image =>
   )
 .join(""));
 
-// galleryImg.style.display = "flex";
-// galleryImg.style.justifyContent: "space-between";
-
-// Пробув зробити так але тоді взагалі лішки не добавляютьсяю.
+galleryImg.style.display = "flex";
+galleryImg.style.justifyContent = "space-between";
